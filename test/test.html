@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>$(document).ready(function () {
+  $('.skill-icons').children('.active').each(function(i) {
+    var row = $(this);
+    setTimeout(function() {
+      row.css('background','#c0392b');
+    }, 100*i);
+  });
+});</script>
+<nav>
+  <ul id="menu">
+    <li data-menuanchor="home"> <a href="#home">Home</a></li>
+    <li data-menuanchor="about"> <a href="#about">About</a></li>
+    <li data-menuanchor="portfolio"> <a href="#portfolio">Portfolio</a></li>
+    <li data-menuanchor="contact"> <a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="menu-icon"><span></span></div>
+<div id="fullpage">
+  <div data-anchor="home" class="section">
+    <h1>Geoff Storbeck</h1>
+    <h2>Front-end web developer</h2>
+  </div>
+  <div data-anchor="about" class="section">
+    <h1>Skills & Expertise</h1>
+    <h2>I've been developing my skill-set to focus on what's most suited to getting the job done quickly and effectively.</h2>
+    <h2>I focus on front-end technologies and making the web both functional and beautiful.</h2>
+  </div>
+  <div data-anchor="portfolio" class="section">
+    <h1>Portfolio</h1>
+    <h2>Here is a small collection of my work. </h2>
+    <div id="fp-nav" class="right" style="margin-top: -43.5px;"><ul><li><a href="#home" class="active"><span></span></a><div class="fp-tooltip right">Home</div></li><li><a href="#about"><span></span></a><div class="fp-tooltip right">About</div></li><li><a href="#portfolio"><span></span></a><div class="fp-tooltip right">Portfolio</div></li><li><a href="#contact"><span></span></a><div class="fp-tooltip right">Contact</div></li></ul></div>
+    <div class="cards">
+      <div class="card"><a href="https://codepen.io/GeoffStorbeck/full/GJKRxZ"><img src="https://i.imgur.com/xjrljuv.png" alt="Twitch Status"/></a></div>
+      <div class="card"><a href="https://codepen.io/GeoffStorbeck/full/raqvpX/"><img src="https://i.imgur.com/h6IJBQj.png" alt="Audio Player"/></a></div>
+      <div class="card"><a href="https://codepen.io/GeoffStorbeck/full/zxgaqw/"><img src="https://i.imgur.com/M3Bnj2T.png" alt="Calculator"/></a></div>
+      <div class="card"><a href="https://codepen.io/GeoffStorbeck/full/gbNEOr/"><img src="https://i.imgur.com/ueC8RXR.png" alt="Login Form"/></a></div>
+    </div>
+  </div>
+  <div data-anchor="contact" class="section">
+    <h1>Contact</h1>
+    <div class="contacts"><a href="http://geoffstorbeck.com/">Portfolio</a><a href="https://codepen.io/GeoffStorbeck/">Codepen</a><a href="https://linkedin.com/profile/view?id=123027862">LinkedIn</a><a href="https://twitter.com/GeoffStorbeck">Twitter</a><a href="https://facebook.com/Geoff.Storbeck">Facebook</a><a href="https://github.com/storbeck">Github</a></div>
+  </div>
+</div>
+	</body>
+
+</html>
